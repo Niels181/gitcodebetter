@@ -19,10 +19,6 @@ function wasmachineValue() {
     return wasmachine;
 }
 
-/* function readP1(){
-    var p1Data = readLastLines.read('../P1_2018-04-07_10s.csv', 3)
-}
- */
 var iota = new IOTA({ provider: 'https://nodes.testnet.iota.org:443' })
 powboxPatch(iota, 'https://powbox.testnet.iota.org')
 
