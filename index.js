@@ -19,6 +19,18 @@ function wasmachineValue() {
     return wasmachine;
 }
 
+function readP1(){
+    var p1Data = readLastLines.read('../P1_2018-04-07_10s.csv', 3)
+}
+
+function filterP1(){ // DEZE FUNCTIE IS TROEP EN MOET WEG
+    return my_object.filter(function(obj) { // DEZE FUNCTIE IS TROEP EN MOET WEG
+    return Object.keys(my_criteria).every(function(c) { // DEZE FUNCTIE IS TROEP EN MOET WEG
+      return obj[c] == my_criteria[c]; // DEZE FUNCTIE IS TROEP EN MOET WEG
+    });// DEZE FUNCTIE IS TROEP EN MOET WEG
+  });// DEZE FUNCTIE IS TROEP EN MOET WEG
+}// DEZE FUNCTIE IS TROEP EN MOET WEG
+
 var iota = new IOTA({ provider: 'https://nodes.testnet.iota.org:443' })
 powboxPatch(iota, 'https://powbox.testnet.iota.org')
 
